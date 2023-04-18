@@ -1,0 +1,28 @@
+.book{
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    width : 90vw;
+    /* height : calc(90vw * 1.43); */
+    justify-content : space-between;
+    align-items : center;
+    border-radius : 0.1rem;
+    gap : 1rem;
+}
+
+.text{
+    font-size : 1rem;
+    text-align : center;
+    padding : 0.5rem;
+}
+
+.logo{
+    height : 6rem;
+    width : auto;
+}
+
+.stars > *{
+    width : 2.5rem;
+    height : 2.5rem;
+    color : gold;
+}

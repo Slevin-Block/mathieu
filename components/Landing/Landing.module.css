@@ -1,0 +1,46 @@
+.book, .fourthCover, .comment{
+    position : relative;
+    display : flex ;
+    flex-direction : column;
+    width : 100%;
+    min-height : 90vh;
+    justify-content : space-between;
+    align-items : center;
+    flex-grow : 1;
+}
+
+.next {
+    height : 3rem;
+}
+
+.chevronDown, .chevronTop{
+    width : 2rem;
+    height : 2rem;
+}
+
+.chevronDown{
+    animation : 3s moveChevronDown infinite;
+}
+
+.chevronTop{
+    animation : 3s moveChevronUp infinite;
+}
+
+@keyframes moveChevronDown {
+    0%{transform : translateY(-0.3rem) rotate(90deg)}
+    15%{transform : translateY(0) rotate(90deg)}
+    30%{transform : translateY(-0.3rem) rotate(90deg)}
+    100%{transform : translateY(-0.3rem) rotate(90deg)}
+}
+
+@keyframes moveChevronUp {
+    0%{transform : translateY(0) rotate(-90deg)}
+    15%{transform : translateY(-0.3rem)  rotate(-90deg)}
+    30%{transform : translateY(0)  rotate(-90deg)}
+    100%{transform : translateY(0)  rotate(-90deg)} 
+}
+
+.subTitle{
+    padding : 0 1rem;
+    text-align : center;
+}

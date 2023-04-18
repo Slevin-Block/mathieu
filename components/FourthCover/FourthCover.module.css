@@ -1,0 +1,21 @@
+.book{
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    width : 90vw;
+    height : calc(90vw * 1.43);
+    justify-content : space-between;
+    border : 1px solid var(--grey);
+    border-radius : 0.1rem;
+}
+
+.title{
+    font-size : 1rem;
+    padding : 0.5rem;
+}
+
+.body>*{
+    font-size : 0.85rem;
+    padding : 0.5rem;
+    text-align : justify;
+}

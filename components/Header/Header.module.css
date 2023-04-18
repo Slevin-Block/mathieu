@@ -1,0 +1,113 @@
+.overlay{
+    position :fixed;
+    z-index: 1;
+    top : 0;
+    left : 0;
+    width : 100vw;
+    height : 100vh;
+    background : var(--black);
+    opacity : 0.3;
+}
+
+.menu {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 100%;
+    width : 3rem;
+    z-index: 2;
+    margin-left : 1rem;
+}
+
+.menu-bar {
+  width : 100%;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.bar1 {
+  transform: translateY(-4px);
+}
+
+.bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  position : absolute;
+  top : 0;
+  left : 0;
+  margin-top : 4rem;
+  display: flex;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 0.6rem 0;
+}
+
+.nav li a {
+  color: white;
+  font-family : "Garet-Book";
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, .menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, var(--primary), var(--primary));
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  /* display: flex; */
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change .bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 555px;
+  height: 510px;
+  transform: translate(-60%,-30%);
+}

@@ -1,0 +1,97 @@
+
+.book{
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    width : 90vw;
+    height : calc(90vw * 1.43);
+    justify-content : space-between;
+    border : 1px solid var(--grey);
+    border-radius : 0.1rem;
+}
+
+.header {
+    display : flex;
+    flex-direction : column;
+    padding-left : 1.5rem;
+    padding-top : 3rem;
+}
+
+.author{
+    font-family : "Garet-Heavy";
+    font-size : 1.5rem;
+    color : var(--primary);
+    animation : 1s 1s appearAuthor forwards ease-in-out;
+    transform : translateX(-80vw);
+}
+
+.title{
+    font-family : "Garet-Book";
+    font-size : 1.5rem;
+    font-weight : normal;
+    color : var(--black);
+    animation : 1s 1s appearTitle forwards ease-in-out;
+    transform : translateX(100vw);
+}
+
+.cover {
+    padding-bottom : 3rem;
+    width : 100%;
+    height: auto;
+}
+
+@keyframes appearAuthor {
+    0%{
+        transform : translateX(-80vw);
+    }
+
+    80%{
+        transform : translateX(4vw);
+
+    }
+    100%{
+        transform : translateX(0vw);
+    }
+}
+@keyframes appearTitle {
+    0%{
+        transform : translateX(100vw);
+    }
+    80%{
+        transform : translateX(-4vw);
+    }
+    100%{
+        transform : translateX(0vw);
+    }
+}
+
+.shop{
+    position : absolute;
+    right : 0.7rem;
+    bottom : 1.5rem;
+    display : flex;
+    flex-direction : row;
+    justify-content : flex-start;
+    align-items : center;
+    width : 3rem;
+    height : 3rem;
+    border-radius : 50%;
+    background-color : var(--primary);
+    animation : 1s appearlibrinova forwards ease-in-out;
+    color : var(--white);
+    border-radius : 1.5rem;
+    overflow : hidden ;
+}
+
+.icon{
+    height : 1.4rem;
+    width : 1.4rem;
+    color : var(--white);
+    margin-left : 0.8rem;
+    margin-right : 0.2rem;
+}
+
+@keyframes appearlibrinova {
+    0%  { width : 3rem; }
+    100%{ width : 8.3rem; }
+}
