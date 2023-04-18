@@ -44,10 +44,8 @@ header{
 }
 
 main{
-    position : absolute;
     display : flex;
     flex-direction : column;
-    bottom : 0;
     height : 90vh;
     width : 100vw;
     align-items: center;
@@ -55,3 +53,7 @@ main{
     overflow-x: hidden;
     margin-top : 10vh;
 }
+
+/* h3{
+    padding-top : 10vh;
+} */
