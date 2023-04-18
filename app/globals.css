@@ -47,4 +47,5 @@ main{
     align-items: center;
     overflow-y : auto;
     overflow-x: hidden;
+    margin-top : 10vh;
 }
