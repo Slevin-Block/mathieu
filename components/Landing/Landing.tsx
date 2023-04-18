@@ -37,7 +37,7 @@ function Landing() {
             </section>
 
             <section className={styles.fourthCover} ref={fourthCover}>
-                <h3 className={styles.subTitle}>L’histoire de Noé comme vous ne l’avez jamais lue !</h3>
+                <h3 className={styles.subTitle}>L’histoire de Noé comme<br /> vous ne l’avez jamais lue !</h3>
                 <FourthCover />
                 <div className={styles.next} >
                     <TiChevronRight className={styles.chevronDown} onClick={scrollToComment} />

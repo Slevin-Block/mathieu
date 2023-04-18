@@ -46,7 +46,7 @@ header{
 main{
     display : flex;
     flex-direction : column;
-    height : 90vh;
+    max-height : 90vh;
     width : 100vw;
     align-items: center;
     overflow-y : auto;
