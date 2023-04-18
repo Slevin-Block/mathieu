@@ -4,6 +4,7 @@
     flex-direction : column;
     width : 100%;
     min-height : 90vh;
+    height : 90vh;
     max-height : 90vh;
     justify-content : space-between;
     align-items : center;
